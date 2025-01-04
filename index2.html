@@ -10,8 +10,8 @@
   </head>
   <!-- HEADER - STICK RIBBON  -->
   <header> 
-    <div id="language-ribbon">
-        <ul>
+    <div id="language-ribbon-container">
+        <ul id="language-ribbon">
             <li id="search-item" class="language-ribbon-item"></li>
             <li id="language-container-item" class="language-ribbon-item">
                 <img alt="USA-flag" src="USA flag.png" loading="lazy">
@@ -24,13 +24,13 @@
             <ul>
                 <li id="logo" class="menu-item"></li>
                 <li class="menu-item">
-                    <a><img alt="logo" src="" loading="lazy"></a>
+                    <a href="index.html" target="_blank"><img alt="logo" src="" loading="lazy"></a>
                 </li>
-                <li class="menu-item"><a>Hire Talent</a></li>
-                <li class="menu-item"><a>Solutions</a></li>
-                <li class="menu-item"><a>About us</a></li>
-                <li class="menu-item"><a>Insights</a></li>
-                <li class="menu-item"><a>Contact us</a></li>
+                <li class="menu-item"><a href="index2.html" target="_blank">Hire Talent</a></li>
+                <li class="menu-item"><a href="index3.html" target="_blank">Solutions</a></li>
+                <li class="menu-item"><a href="index4.html" target="_blank">About us</a></li>
+                <li class="menu-item"><a href="index5.html" target="_blank">Insights</a></li>
+                <li class="menu-item"><a href="index6.html" target="_blank">Contact us</a></li>
                 <li class="menu-item"><a>Pay bill</a></li>
                 <li class="menu-item"><a>Client Portal</a></li>
             </ul>
@@ -82,14 +82,82 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              
-
-
-
-
+              </div>              
         </div>
+        <div id="ht-2nd-vp-container">
+            <div id="hire-form-container">
+                <h2 class="vp-title">Fill in this form to start your hiring journey</h2>
+                <form  class="d-flex flex-column gap-3"  method="post" action='operations@drage.com' id="hire-form" name="hire-form">
+                    <fieldset>
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>Accounting</option>
+                          <option value="1">Tech</option>                        
+                        </select>
+                        <label for="floatingSelect">Area</label>
+                      </div>
+                      <div class="form-floating"> <!--Work searcher fits better here. Besides find a way to make it dependable of the first selection-->
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>Accountant Senior</option>
+                          <option value="1">Accountant Junior</option>     
+                          <option value="2">Operations assistant</option>                        
+                        </select>
+                        <label for="floatingSelect">Job title</label>
+                      </div>
+                      <div class="form-floating"> <!--Work searcher fits better here. Besides find a way to make it dependable of the first selection-->
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>USA</option>
+                          <option value="1">Canada</option>     
+                          <option value="2">LATAM</option>                        
+                        </select>
+                        <label for="floatingSelect">Location</label>
+                      </div>
+                      <div class="form-floating"> <!--Work searcher fits better here. Besides find a way to make it dependable of the first selection-->
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>Quickbooks</option>
+                          <option value="1">ShareFile</option>     
+                          <option value="2">Programming</option>                        
+                        </select>
+                        <label for="floatingSelect">Special requirements</label>
+                      </div>
+                      <div class="form-floating"> <!--Work searcher fits better here. Besides find a way to make it dependable of the first selection-->
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>Temporary</option>
+                          <option value="1">Indefinite</option>     
+                          <option value="2">Trial</option>                        
+                        </select>
+                        <label for="floatingSelect">Position package</label>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Date</label>
+                        <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="Estimated date to start">
+                      </div>
+                      <input id="submit-btn" class="btn btn-primary" type="submit" value="Talk to our recruiter!">
+                    </fieldset>
+                </form>
+                <img src="" alt="Hiring process" loading="lazy" aria-label="Content">
+            </div>
+        </div>
+
     </section>
+
+    <footer id="footer" class="section-item">
+        <div id="footer-top">
+            <div id="social-media">
+                <img src="Social icons.jpg">
+                <p class="vp-paragraph">Phone: XXX-XXX-XXXX</p>
+                <p class="vp-paragraph">Fax: XXX-XXX-XXXX</p>
+                <p class="vp-paragraph">Email: <a href="operations@drage.com">companyemail@domain.com</a></p>
+            </div>
+            <div id="address-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3594.900350134119!2d-80.28586082460143!3d25.70772317738582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9c7fb9c300001%3A0x1b3c78d5ae672bc2!2s1550%20Madruga%20Ave%20STE%20150%2C%20Coral%20Gables%2C%20FL%2033146!5e0!3m2!1sen!2sus!4v1735952001867!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div id="footer-bottom">
+            <p class="footer-bottom">© 2024 Company name. All rights reserved <span class="footer-link"><a href=""> Terms and conditions</a></span><span class="footer-link"><a href=""> Privacy Policy</a></span></p>
+        </div>
+    </footer>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
