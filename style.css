@@ -1,5 +1,15 @@
 :root {
+  /*Header*/
     --title-color: black;
+    --ribbon-color-font: white;
+    --ribbon-color-bg: rgb(6, 6, 97);
+    --ribbon-color-font-hover: rgb(6, 6, 97);
+    --ribbon-color-bg-hover: white;
+    /*Home page*/
+    --btn-1st-vp-color: white;
+    --btn-1st-vp-bg: black;
+    --btn-1st-vp-bg-hover: rgba(0, 0, 0, 0.89);
+    --welcoming-h1: var(--btn-1st-vp-bg);
   }
   
   * {
@@ -7,12 +17,64 @@
     box-sizing: border-box;
     margin: 0 auto;
     text-align: center;
+    padding: 0;
+
   }
   
   html {
     font-family: arial, verdana;
    scroll-behavior: smooth;
   }
+
+  body {
+    height: 100%;
+  }
+
+  /*HEADER-----------------------------------------------------------------*/
+  header {
+    background-color: var(--ribbon-color-bg);
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    top: 0px;
+    z-index:100;
+  }
+
+  #logo-container {
+    float: left;
+  }
+
+  #logo {
+    width: 100px;
+    height: 70px;
+    position: relative;
+    top: 8px;
+    left: 35px;
+    padding: 5px;
+  }
+
+  .search-item {
+    height: 30px;
+  }
+
+  #language-ribbon { /*Check how to move children*/
+    padding-top: 11px;
+  }
+
+
+  .menu-item > a {
+    color: var(--ribbon-color-font);
+    font-weight: bold;
+    padding: 4px;
+    border-radius: 5px;
+
+  }
+
+  .menu-item > a:hover {
+    color: var(--ribbon-color-font-hover);
+    background-color: var(--ribbon-color-bg-hover);
+  }
+
 
   .menu-item > a, .home-page-button {
     text-decoration: none;
@@ -22,9 +84,10 @@
     list-style-type: none;
   }
   
-  #language-container-item > img {
-    width: 25px;
-    height: 15px;
+  #language-container-item > img { /*Flag sizes*/
+    width: 35px;
+    height: 25px;
+    padding-top: 5px;
   }
 
   #language-ribbon, #nav-menu > ul {
@@ -34,6 +97,93 @@
   #language-ribbon {
     justify-content: flex-end;
   }
+
+  /*Body content ALL index-----------------------------------------------------------------*/
+
+  .section-item, footer {
+    height: 100vh;
+  }
+
+  /*Body content home page-----------------------------------------------------------------*/
+  
+  #home-page-1st-vp { 
+    position: relative; 
+    background-image: url("homePageImg.jpg"); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+  } 
+
+ #btns-hp-1st-vp {
+  display: flex;
+ }
+
+ #Home-page-Welcoming {
+  padding: 250px 0 50px 0;
+  color: white; /*FIND SOME WAY TO FIX OPACITY AND CHANGE THIS*/
+ }
+
+ #btns-hp-1st-vp-container {
+  margin-top: 90px;
+  display: flex;
+ }
+
+ .home-page-button {
+  color: var(--btn-1st-vp-color);
+  background-color: var(--btn-1st-vp-bg);
+  padding: 20px;
+  border-radius: 3px;
+ }
+
+ .home-page-button:hover {
+  background-color: var(--btn-1st-vp-bg-hover);
+  transform: scale(1.05);
+ }
+
+ #ws-link {
+  color: white;
+  background-color: green;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 7px;
+  border-radius: 5px;
+ }
+
+ #ws-link-container:hover {
+  transform: scale(1.04);
+ }
+
+ #ws-link-container {
+  position: fixed;
+  right: 4%;
+  bottom: 10%;
+ }
+ 
+/*Footer-----------------------------------------------------------------*/
+footer {
+  background-color: blue;
+} 
+
+.vp-title {
+  padding: 120px 0 50px 0;
+}
+
+#footer-top {
+  display: flex;
+  padding-bottom: 90px;
+ }
+
+#social-media > * {
+  padding: 10px;
+}
+
+#address-map > iframe {
+  width: 500px;
+  height: 250px;
+}
+
+#solutions-1st-vp {
+  background-color: brown;
+}
   
   /*MEDIA*/
   
