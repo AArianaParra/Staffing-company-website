@@ -504,6 +504,11 @@ footer {
   height: 250px;
 }
 
+#social-media> p> a{
+  color: black;
+  text-decoration: none;
+}
+
 
   /*MEDIA*/
   
