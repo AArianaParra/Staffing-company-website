@@ -489,8 +489,7 @@ footer {
 
 #footer-color-bg {
   background-color: rgba(240, 248, 255, 0.699);
-  margin: 0;
-  padding-bottom: 30px;
+  margin-bottom: 0;
   z-index:1;
 }
 
@@ -521,7 +520,8 @@ footer {
 
 #footer-bottom {
   position: relative;
-  bottom: 2px;
+  bottom: 0px;
+
 }
 
 
@@ -535,4 +535,9 @@ footer {
       #hp-2nd-vp-img {
         margin-top: 15%;
        }
+
+       #footer-bottom {
+        position: relative;
+        bottom: 0px;
+      }
   }
