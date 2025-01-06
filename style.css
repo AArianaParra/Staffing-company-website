@@ -488,7 +488,7 @@ footer {
 } 
 
 #footer-color-bg {
-  background-color: rgba(240, 248, 255, 0.37);
+  background-color: rgba(240, 248, 255, 0.699);
   z-index:1;
 }
 
@@ -525,7 +525,7 @@ footer {
 
   /*MEDIA*/
   
-  @media screen and (min-width: 1500px) {
+  @media screen and (min-width: 1500px) and (max-width: 2000px) {
     html {
       font-size: 20px; /* Default root font size */
       }
