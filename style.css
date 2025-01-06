@@ -38,7 +38,7 @@
 
   /*GENERAL FONT COLOR AND SIZES*/
 
-  .vp-paragraph, .vp-list-item {
+  .vp-paragraph, .vp-list-item, #test {
     color: var(--paragraph-font-color);
     font-size: var(--paragraph-font-size);
   }
