@@ -525,7 +525,7 @@ footer {
 
   /*MEDIA*/
   
-  @media screen and (min-width: 1800px) {
+  @media screen and (min-width: 1500px) {
     html {
       font-size: 20px; /* Default root font size */
       }
