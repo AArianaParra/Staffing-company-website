@@ -273,7 +273,11 @@
   padding: 5px 0;
  }
 
-/*4th VP*/
+/*5th VP*/
+#home-page-5th-vp {
+  background-color: rgba(128, 128, 128, 0.192);
+}
+
 #hp-5th-vp-container, #hp-5th-vp-img-container {
   display: flex;
 }
@@ -509,9 +513,16 @@ footer {
   text-decoration: none;
 }
 
+#footer-bottom {
+  position: relative;
+  bottom: 2px;
+}
+
 
   /*MEDIA*/
   
-  @media screen and (max-width: 480px) {
-    
+  @media screen and (min-width: 1900px) {
+    html {
+      font-size: 20px; /* Default root font size */
+      }
   }
