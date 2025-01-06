@@ -134,13 +134,17 @@
     background-size: cover; 
   } 
 
+  #Home-page-Welcoming {
+    background-color: rgba(231, 234, 236, 0.712);
+  }
+
  #btns-hp-1st-vp {
   display: flex;
  }
 
  #Home-page-Welcoming {
   padding: 250px 0 50px 0;
-  color: white; /*FIND SOME WAY TO FIX OPACITY AND CHANGE THIS*/
+  color: black; /*FIND SOME WAY TO FIX OPACITY AND CHANGE THIS*/
  }
 
  #btns-hp-1st-vp-container {
@@ -182,7 +186,7 @@
  }
 
 /*2nd VP*/
-#home-page-2nd-vp {
+#home-page-2nd-vp, #hire-talent-2nd-vp {
   background-color: rgba(128, 128, 128, 0.192);
 }
 
@@ -521,7 +525,7 @@ footer {
 
   /*MEDIA*/
   
-  @media screen and (min-width: 1900px) {
+  @media screen and (min-width: 1800px) {
     html {
       font-size: 20px; /* Default root font size */
       }
