@@ -532,6 +532,11 @@ footer {
       font-size: 20px; /* Default root font size */
       }
 
+      header {
+        background-color: var(--ribbon-color-bg);
+        height: 110px;
+      }
+
       #hp-2nd-vp-img {
         margin-top: 15%;
        }
