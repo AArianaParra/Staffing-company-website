@@ -562,7 +562,7 @@
     /*MEDIA-----------------------------------------------------------------------------------*/
     @media screen and (min-width: 300px) and (max-width: 700px) {
       html {
-        font-size: 10px; /* 16px Default root font size */
+        font-size: 14px; /* 16px Default root font size */
         }
         /*Header----------*/
         #collapse-menu {
@@ -590,9 +590,15 @@
         }
         
         /*HP 1st vp----------*/
+        #btns-hp-1st-vp-container {
+          flex-direction: column;
+          row-gap: 20px;
+        }
+
         .home-page-button {
           padding: 8px;
          }
+
   
          /*HP 2nd vp----------*/
         #hp-2nd-vp-img {
@@ -745,7 +751,7 @@
 
     @media screen and (min-width: 700px) and (max-width: 1000px) {
       html {
-        font-size: 12px; /* 16px Default root font size */
+        font-size: 16px; /* 16px Default root font size */
         }
         /*Header----------*/
         #collapse-menu {
@@ -922,7 +928,7 @@
     
     @media screen and (min-width: 1000px) and (max-width: 1300px) {
       html {
-        font-size: 14px; /* 16px Default root font size */
+        font-size: 18px; /* 16px Default root font size */
         }
   
         header {
@@ -994,7 +1000,6 @@
           #footer-bottom {
             padding-bottom: 0px;
             padding-top: 120px;
-          
           }
 
 
