@@ -967,7 +967,10 @@
          }
 
          /*Footer---*/
-  
+         #footer-h2 {
+          padding-top: 100px;
+         }
+
          #footer-bottom {
           position: relative;
           bottom: 0px;
