@@ -956,10 +956,22 @@
           height: 130px;
         }
 
+        /*HP-1st VP---*/
+
+
         /*HP-2nd VP---*/
         #hp-2nd-vp-img {
           margin-top: 17%;
          }
+
+         /*HP-6th VP---*/ 
+         #home-page-6th-vp {
+          padding-top: 90px;
+         }
+         
+         #home-page-6th-vp > .vp-title {
+          padding: 90px 0 50px 0;
+        }
 
          /*Insights-2nd VP---*/
          #insights-1st-vp {
@@ -975,9 +987,9 @@
           position: relative;
           bottom: 0px;
          }
-          #footer-color-bg {
-            margin-bottom: 50px;
-          }
+          /* #footer-color-bg {
+            *margin-bottom: 50px;
+          } */
 
           #footer-bottom {
             padding-bottom: 0px;
