@@ -24,6 +24,7 @@
     margin: 0 auto;
     text-align: center;
     padding: 0;
+    flex-wrap: wrap;
 
   }
   
@@ -48,6 +49,19 @@
     font-size: var(--title-font-size);
     font-weight: bold;
   }
+
+  #ht-2nd-vp-form-container> h2 { /**MOVE THIS THREE TO THEIR RESPECTIVE PLACES*/
+    padding: 80px 0 50px 0;
+  }
+
+  #solutions-1st-vp > h2 {
+    padding: 160px 0 50px 0;
+  }
+
+  #About-us-1st-vp {
+    padding-top: 190px;
+  }
+
 
 
 
@@ -88,7 +102,6 @@
     font-weight: bold;
     padding: 4px;
     border-radius: 5px;
-
   }
 
   .menu-item > a:hover {
@@ -115,8 +128,24 @@
     display: flex;
   }
 
-  #language-ribbon {
-    justify-content: flex-end;
+  #collapse-menu {
+    display: none;
+    background-color: var(--ribbon-color-bg);
+    border: gray 2px;
+    height: 10px;
+    width: 40px;
+    float: right;
+    padding-right: 20px;
+      }
+
+  .collapsible-menu-lines {
+    width: 30px;
+    height: 3px;
+    background: var(--ribbon-color-font);
+  }
+
+  #nav-menu-collapsible {
+    display: none;
   }
 
   /*Body content ALL index-----------------------------------------------------------------*/
@@ -208,7 +237,8 @@
  }
 
  #hp-2nd-vp-text > h2 {
-  margin-top: 5%;
+  padding-top: 140px;
+
  }
 
 
@@ -257,10 +287,12 @@
 
 #hp-4th-vp-offer{ 
   display: flex;
+  flex-wrap: wrap;
 }
 
 #hp-4th-vp-container > .vp-title {
   padding-top: 175px;
+  padding-bottom: 50px;
 }
 
 #hp-4th-vp-container > #hp-4th-vp-offer > article {
@@ -318,7 +350,7 @@
   padding: 0;
 }
 
-/*5th VP*/
+/*6th VP*/
 #home-page-6th-vp > .vp-title {
   padding-top: 50px;
   margin-bottom: 0;
@@ -493,14 +525,14 @@ footer {
   z-index:1;
 }
 
-.vp-title {
-  padding: 120px 0 50px 0;
+#footer-h2  {
+  padding: 120px 0 60px 0;
+  
 }
 
 #footer-top {
   display: flex;
-  padding-bottom: 90px;
-  
+  padding-bottom: 90px;  
  }
 
 #social-media > * {
@@ -511,6 +543,7 @@ footer {
 #address-map > iframe {
   width: 500px;
   height: 250px;
+  margin: 0;
 }
 
 #social-media> p> a{
@@ -525,11 +558,187 @@ footer {
 }
 
 
-  /*MEDIA*/
-  
-  @media screen and (min-width: 1700px) and (max-width: 2000px) {
+  /*MEDIA-----------------------------------------------------------------------------------*/
+  @media screen and (min-width: 400px) and (max-width: 1000px) {
     html {
-      font-size: 20px; /* Default root font size */
+      font-size: 12px; /* 16px Default root font size */
+      }
+      /*Header----------*/
+      #collapse-menu {
+        display:flex ;
+        row-gap: 3px;
+      }
+
+      .show {
+        display: flex;
+    }
+
+      header {
+        background-color: var(--ribbon-color-bg);
+        height: 80px;
+      }
+
+      #logo {
+        width: 70px;
+        height: 50px;
+        padding: 3px;
+      }
+
+      #nav-menu {
+        display: none;
+      }
+      
+      /*HP 1st vp----------*/
+      .home-page-button {
+        padding: 12px;
+       }
+
+       /*HP 2nd vp----------*/
+      #hp-2nd-vp-img {
+        margin-top: 15%;
+       }
+
+       #hp-2nd-vp-text > h2 {
+        margin-top: 50px;
+        padding: 5px;  
+       }
+
+       #hp-2nd-vp-text {
+        margin-top: -20px;
+        width: 90%;
+       }
+
+       #hp-2nd-vp-img {
+        height: 250px;
+        width: 240px;
+        margin-top: 8%;
+       }
+
+       /*HP 4th vp----------*/
+      #hp-4th-vp-offer{ 
+        flex-direction: column;
+      }
+      
+      #hp-4th-vp-container > .vp-title {
+        padding-top: 35px;
+      }
+
+      #hp-4th-vp-container > #hp-4th-vp-offer > article {
+        padding: 15px;
+        border-radius: 5px;
+        border: var(--btn-1st-vp-bg) 3px solid;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.432);
+      }
+
+      #hp-4th-vp-offer {
+        row-gap: 8px;
+      }
+
+      /*HP 5th vp----------*/
+      #hp-5th-vp-img-container, #hp-5th-vp-img-container > * {
+        display: none /*MEANWHILE______*/
+      }
+     
+      #hp-5th-vp-container, #hp-5th-vp-img-container {
+        display: flex;
+      }
+    
+  
+      #hp-5th-vp-container > #hp-5th-vp-content > .vp-title {
+        padding-top: 85px;
+      }
+      
+      #hp-5th-vp-content {
+        text-align: center;
+        width: 85%;
+      }
+
+      /*HP 6th vp----------*/
+      #carouselExampleControls {
+        width: 70%;
+      }
+
+      /*HT 1st vp----------*/
+      #ht-1st-vp-text-container {
+        top: 100px;
+        padding: 20px;
+        height: 70%;
+        width: 70%;
+      }
+
+      /*HT 2nd vp----------*/
+      #hire-talent-2nd-vp {
+        height: 900px;
+      }
+
+      #hire-form-steps-container {
+        flex-direction: column;
+      }
+      
+      #Form-steps-title {
+        padding: 30px 0 30px 0;
+      }
+      
+      #form-steps-subtitle {
+        padding: 40px;
+      }
+      
+      #hire-form-container {
+        width: 70%;
+        height:70%;
+        margin-top: 10px;
+      }
+      
+      #form-steps-container {
+        width: 70%;
+      }
+
+      /*Solutions 1st vp----------*/
+      #Solutions-list-container {
+        flex-direction: column;
+        row-gap: 5px;
+      }
+
+      #solutions-1st-vp > h2 {
+        padding: 120px 0 10px 0;
+      }
+
+      #Solutions-list-container > * {
+        width: 60%;
+      }
+      
+      /*Footer----------*/     
+      #footer-h2  {
+        padding: 90px 0 10px 0;
+      }
+      
+      #footer-top {
+         flex-direction: column;
+        padding-bottom: 0px;  
+       }
+      
+      #social-media > * {
+        padding: 5px;
+      }
+      
+      #address-map > iframe {
+        width: 300px;
+        height: 200px;
+        margin: 0;
+      }
+
+      
+      #footer-bottom {
+        position: relative;
+        padding-bottom: 40px;
+        padding-top: 10px;
+      
+      }
+  }
+  
+  @media screen and (min-width: 1000px) and (max-width: 1300px) {
+    html {
+      font-size: 14px; /* 16px Default root font size */
       }
 
       header {
@@ -538,7 +747,33 @@ footer {
       }
 
       #hp-2nd-vp-img {
-        margin-top: 15%;
+        height: 370px;
+        width: 350px;
+        margin-top: 100px;
+       }
+
+       #footer-bottom {
+        position: relative;
+        bottom: 0px;
+
+        #footer-color-bg {
+          margin-bottom: 50px;
+        }
+      }
+  }
+
+  @media screen and (min-width: 1500px) and (max-width: 2000px) {
+    html {
+      font-size: 20px; /* 16px Default root font size */
+      }
+
+      header {
+        background-color: var(--ribbon-color-bg);
+        height: 130px;
+      }
+
+      #hp-2nd-vp-img {
+        margin-top: 17%;
        }
 
        #footer-bottom {

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Colapsable con Icono</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            background-color: #333;
+            padding: 10px;
+        }
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .menu-icon {
+            display: none;
+            font-size: 30px;
+            cursor: pointer;
+        }
+        @media screen and (max-width: 600px) {
+            .navbar a {
+                display: none;
+            }
+            .navbar a.icon {
+                float: right;
+                display: block;
+            }
+            .navbar.responsive {
+                position: relative;
+            }
+            .navbar.responsive .menu-icon {
+                display: block;
+            }
+            .navbar.responsive .menu-content {
+                display: block;
+                position: absolute;
+                top: 50px;
+                right: 10px;
+                background-color: #333;
+                padding: 10px;
+                border: 1px solid #ddd;
+                z-index: 1;
+            }
+            .navbar.responsive .menu-content a {
+                display: block;
+                text-align: left;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar" id="myNavbar">
+    <a href="#home">Inicio</a>
+    <a href="#services">Servicios</a>
+    <a href="#contact">Contacto</a>
+    <a href="javascript:void(0);" class="menu-icon" onclick="toggleMenu()">&#9776;</a>
+    <div class="menu-content" id="menuContent">
+        <a href="#home">Inicio</a>
+        <a href="#services">Servicios</a>
+        <a href="#contact">Contacto</a>
+    </div>
+</div>
+
+<script>
+    function toggleMenu() {
+        var x = document.getElementById("myNavbar");
+        var y = document.getElementById("menuContent");
+        if (x.className === "navbar") {
+            x.className += " responsive";
+            y.style.display = "block";
+        } else {
+            x.className = "navbar";
+            y.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>
